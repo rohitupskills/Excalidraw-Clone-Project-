@@ -1,4 +1,126 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+}
+header{
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 20px;
+    position: relative;
+}
+.humburger{
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 8px;
+    /* box-shadow: 1px 1px 1px 1px rgb(168, 168, 168); */
+}
+
+.humburger>button{
+    border: none;
+}
+.humburger_mobile>button{
+    border: none;
+}
+.humburger_mobile{
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 8px;
+    display: none;
+}
+.all_tools{
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid rgb(212, 212, 212);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px lightgray;
+}
+.all_tools>i{
+    color:#3d3d3d;
+}
+.fa-lock>span.line{
+    border-right: 2px solid rgb(121, 119, 119);
+    padding-left: 25px;
+}
+.fa-rectangle{
+    height: 14px;
+    width: 14px;
+    border: 1px solid #3d3d3d;
+}
+.library{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.users{
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6965db;
+    border-radius: 8px;
+
+}
+.library_icon{
+    height: 40px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 8px;
+}
+.library_icon>i,.library_icon>p{
+    font-size: 12px;
+    color:#3d3d3d;
+}
+.users>i{
+    font-size: 12px;
+    color: white;
+}
+@media screen and (max-width:900px){
+   
+    header{
+        flex-direction: column;
+        gap:20px
+    }
+    .humburger{
+        /* display: none; */
+        position: absolute;
+        top: 100%;
+        left: 10px;
+    }
+    .library{
+        position: absolute;
+        top: 100%;
+        right: 10px;
+    }
+
+    
+}
+@media screen and (max-width:650px){
+   
+    .all_tools{
+        width: 100vw;
+    }
+    
 }
