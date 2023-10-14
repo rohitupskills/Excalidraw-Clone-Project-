@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-.container{
+body{
     position: relative;
 }
 header{
@@ -96,6 +96,50 @@ header{
 .users>i{
     font-size: 12px;
     color: white;
+}
+/* footer */
+.footer_funct{
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 100%;
+    left: 20px;
+
+}
+.zoom_func{
+    display: flex;
+    height: 30px;
+    /* width: 40px; */
+    border-radius: 8px;
+    overflow: hidden;
+}
+.zoom_func>button{
+    font-size: 18px;
+    font-weight: 600;
+    /* height: 100%;
+    width: 100%; */
+    border: none;
+    padding:0px 15px 0px 15px;
+    background-color: rgb(242, 242, 242);
+}
+.output{
+    height: 100%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid lightgray; */
+}
+.undo_rendu{
+    display: flex;
+    gap: 1px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.undo_rendu>button{
+    padding:0px 15px 0px 15px;
+    border: none;
 }
 @media screen and (max-width:900px){
    
