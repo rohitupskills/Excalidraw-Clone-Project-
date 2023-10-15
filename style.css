@@ -97,6 +97,10 @@ header{
     font-size: 12px;
     color: white;
 }
+.container{
+    height:550px;
+    /* width: 100vw; */
+}
 /* footer */
 .footer_funct{
     width: 400px;
